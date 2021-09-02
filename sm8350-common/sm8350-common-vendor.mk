@@ -6,6 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/sm8350-common
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/sm8350-common/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    vendor/xiaomi/sm8350-common/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     vendor/xiaomi/sm8350-common/proprietary/product/bin/init.qti.display.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/init.qti.display.sh \
     vendor/xiaomi/sm8350-common/proprietary/product/build.prop:$(TARGET_COPY_OUT_PRODUCT)/build.prop \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml \
@@ -915,73 +917,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio-test-config:$(TARGET_COPY_OUT_VENDOR)/etc/audio-test-config \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_configs.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/audio_configs_stock.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_configs_stock.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_effects.conf \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_effects.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_io_policy.conf \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_platform_info.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/audio_platform_info_hdk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_platform_info_hdk.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_platform_info_intcodec.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/audio_platform_info_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_platform_info_qrd.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_policy_configuration.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_policy_volumes.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/audio_tuning_mixer.txt \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/default_volume_tables.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/mixer_paths_cdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths_cdp.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/mixer_paths_hdk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths_hdk.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/mixer_paths_overlay_dynamic.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths_overlay_dynamic.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths_overlay_static.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/mixer_paths_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/mixer_paths_qrd.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/r_submix_audio_policy_configuration.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_mixer_paths.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths_cdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_mixer_paths_cdp.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths_hdk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_mixer_paths_hdk.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_mixer_paths_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_mixer_paths_qrd.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina/sound_trigger_platform_info.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_lahaina_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina_qssi/audio_policy_configuration.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/audio_configs.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/audio_configs_stock.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/audio_configs_stock.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/audio_effects.conf \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/audio_effects.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/audio_io_policy.conf \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/audio_platform_info_intcodec.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/audio_platform_info_shimaqrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/audio_platform_info_shimaqrd.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/audio_policy_configuration.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/audio_tuning_mixer.txt \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/mixer_paths_shimaidp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/mixer_paths_shimaidp.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/mixer_paths_shimaidps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/mixer_paths_shimaidps.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/mixer_paths_shimaqrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/mixer_paths_shimaqrd.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/sound_trigger_mixer_paths_shimaidp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/sound_trigger_mixer_paths_shimaidp.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/sound_trigger_mixer_paths_shimaidps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/sound_trigger_mixer_paths_shimaidps.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/sound_trigger_mixer_paths_shimaqrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/sound_trigger_mixer_paths_shimaqrd.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima/sound_trigger_platform_info.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio/sku_shima_qssi/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_shima_qssi/audio_policy_configuration.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_configs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_configs_stock.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_configs_stock.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio_diag.cfg \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_io_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_io_policy.conf \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_platform_info_hdk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_hdk.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_platform_info_intcodec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_intcodec.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_platform_info_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_qrd.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_policy_configuration_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_mi.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_configuration.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_policy_engine_configuration_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_configuration_mi.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_default_stream_volumes.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_policy_engine_default_stream_volumes_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_default_stream_volumes_mi.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_product_strategies.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_policy_engine_product_strategies_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_product_strategies_mi.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_stream_volumes.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_policy_engine_stream_volumes_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_stream_volumes_mi.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
@@ -1351,10 +1286,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/mi_gc_0.txt:$(TARGET_COPY_OUT_VENDOR)/etc/mi_gc_0.txt \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/mi_gc_1.txt:$(TARGET_COPY_OUT_VENDOR)/etc/mi_gc_1.txt \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/mi_gc_2.txt:$(TARGET_COPY_OUT_VENDOR)/etc/mi_gc_2.txt \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/mixer_paths_cdp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_cdp.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/mixer_paths_hdk.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_hdk.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/mixer_paths_qrd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_qrd.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/models_knock_k2_20210401.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/models_knock_k2_20210401.dlc \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/modem/Diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/Diag.cfg \
