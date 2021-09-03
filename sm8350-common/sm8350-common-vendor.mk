@@ -6,35 +6,20 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/sm8350-common
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/sm8350-common/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
-    vendor/xiaomi/sm8350-common/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
+    vendor/xiaomi/sm8350-common/proprietary/odm/etc/build.prop:$(TARGET_COPY_OUT_ODM)/etc/build.prop \
+    vendor/xiaomi/sm8350-common/proprietary/odm/ueventd.rc:$(TARGET_COPY_OUT_ODM)/ueventd.rc \
     vendor/xiaomi/sm8350-common/proprietary/product/bin/init.qti.display.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/init.qti.display.sh \
     vendor/xiaomi/sm8350-common/proprietary/product/build.prop:$(TARGET_COPY_OUT_PRODUCT)/build.prop \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/apns-conf.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/apns-conf.xml \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/default-permissions/default-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-google.xml \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/fs_config_dirs:$(TARGET_COPY_OUT_PRODUCT)/etc/fs_config_dirs \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/fs_config_files:$(TARGET_COPY_OUT_PRODUCT)/etc/fs_config_files \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/group:$(TARGET_COPY_OUT_PRODUCT)/etc/group \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/init/init.miui.google_revenue_share_v2.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.miui.google_revenue_share_v2.rc \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/init/init.qti.display.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.qti.display.rc \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/passwd:$(TARGET_COPY_OUT_PRODUCT)/etc/passwd \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/permissions/com.android.settings.intelligence.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.settings.intelligence.xml \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/permissions/ims_ext_common.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/ims_ext_common.xml \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/permissions/privapp-permissions-google-comms-suite.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-comms-suite.xml \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/permissions/privapp-permissions-google-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-product.xml \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/permissions/services.cn.google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/services.cn.google.xml \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/permissions/split-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/split-permissions-google.xml \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/preferred-apps/google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/preferred-apps/google.xml \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/public.libraries-qti.txt:$(TARGET_COPY_OUT_PRODUCT)/etc/public.libraries-qti.txt \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/security/fsverity/play_store_fsi_cert.der:$(TARGET_COPY_OUT_PRODUCT)/etc/security/fsverity/play_store_fsi_cert.der \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/sysconfig/google-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-hiddenapi-package-allowlist.xml \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/sysconfig/google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google.xml \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/sysconfig/preinstalled-packages-platform-handheld-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-handheld-product.xml \
-    vendor/xiaomi/sm8350-common/proprietary/product/etc/sysconfig/preinstalled-packages-platform-overlays.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-overlays.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/bt_logger:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/bt_logger \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/checknv:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/checknv \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/diag_callback_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_callback_sample_system \
@@ -43,6 +28,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/dun-server:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dun-server \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/perfservice \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/qccsyshalservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qccsyshalservice \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/qspmsvc:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qspmsvc \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/qvrdatalogger:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qvrdatalogger \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/qvrservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qvrservice \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/qvrservicetest:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qvrservicetest \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/qvrservicetest64:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qvrservicetest64 \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/rtspclient:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/rtspclient \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/rtspserver:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/rtspserver \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/sigma_miracasthalservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice \
@@ -55,31 +46,25 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/cdma_call_conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/cdma_call_conf.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/compatconfig/settings-platform-compat-config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/compatconfig/settings-platform-compat-config.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/fs_config_dirs:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/fs_config_dirs \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/fs_config_files:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/fs_config_files \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/group:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/group \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/init/checknv.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/checknv.rc \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/init/init.qti.bt.logger.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.qti.bt.logger.rc \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/init/perfservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/perfservice.rc \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/init/qspmsvc.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qspmsvc.rc \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/init/qvrd_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/qvrd_ext.rc \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.0-service.rc \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/passwd:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/passwd \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/perf/wlc_model.tflite:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/perf/wlc_model.tflite \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/RemoteSimlock.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/RemoteSimlock.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/RemoteSimlockManager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/RemoteSimlockManager.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/UimGba.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/UimGbaManager.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/UimService.xml \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/android.software.verified_boot.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/android.software.verified_boot.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/com.android.carrierconfig.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.carrierconfig.xml \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/com.android.emergency.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.emergency.xml \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/com.android.settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.settings.xml \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/com.android.storagemanager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.storagemanager.xml \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/com.android.systemui.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.systemui.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/com.nxp.nfc.nq.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.nxp.nfc.nq.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.location.sdk.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/com.qti.media.secureprocessor.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.media.secureprocessor.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.location.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/com.qualcomm.qmapbridge.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qmapbridge.xml \
@@ -93,10 +78,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/embms.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/embms.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/izat.xt.srv.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/lpa.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/lpa.xml \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.beyondGnssService.location.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.beyondGnssService.location.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/privapp-permissions-com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/privapp-permissions-google-system-ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-system-ext.xml \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/privapp-permissions-miui-settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-miui-settings.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/privapp-permissions-qti-system-ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti-system-ext.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
@@ -109,7 +91,21 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/uimremoteserver.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/uimremoteserver.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/public.libraries-qti.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-qti.txt \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/qvr/cfg/339/0/65536/mtp855.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/339/0/65536/mtp855.txt \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/qvr/cfg/341/2/65536/svr845.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/341/2/65536/svr845.txt \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/qvr/cfg/356/0/65536/mtp865.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/0/65536/mtp865.txt \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/qvr/cfg/356/0/65536/mtp865_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/0/65536/mtp865_6dof_config.xml \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/qvr/cfg/356/1/131072/morpheus.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/131072/morpheus.txt \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/qvr/cfg/356/1/131072/morpheus_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/131072/morpheus_6dof_config.xml \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/qvr/cfg/356/1/65536/trinity.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/65536/trinity.txt \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/qvr/cfg/356/1/65536/trinity_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/65536/trinity_6dof_config.xml \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/qvr/cfg/415/0/65536/mtplahaina.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/65536/mtplahaina.txt \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/qvr/cfg/415/0/65536/mtplahaina_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/65536/mtplahaina_6dof_config.xml \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/qvr/qvr_hid_device_list.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/qvr_hid_device_list.txt \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/qvr/qvrservice_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/qvrservice_config.txt \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/seccomp_policy/perfservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/perfservice.policy \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/qvr@2.0.policy \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/spn-conf.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/spn-conf.xml \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
@@ -189,6 +185,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqdMetaData.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqdMetaData.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqmi_cci_system.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqmi_encdec_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqmi_encdec_system.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqspmsvc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqspmsvc.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqti-at.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti-at.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqti-iopd-client_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti-iopd-client_system.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqti-perfd-client_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti-perfd-client_system.so \
@@ -196,6 +193,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti_performance.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqti_vndfwk_detect.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti_vndfwk_detect.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqti_workloadclassifiermodel.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqti_workloadclassifiermodel.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqvr_cam_cdsp_driver_stub.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_cam_cdsp_driver_stub.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqvr_cdsp_driver_stub.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_cdsp_driver_stub.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqvr_eyetracking_plugin.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_eyetracking_plugin.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrcamera_client.qti.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqvrservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrservice.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrservice_client.qti.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqvrservice_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrservice_ov7251_hvx_tuning.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqvrservice_ov9282_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrservice_ov9282_hvx_tuning.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libqvrservice_v4l_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrservice_v4l_ov7251_hvx_tuning.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libsd_sdk_display.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsd_sdk_display.qti.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsdm-disp-apis.qti.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsdsprpc_system.so \
@@ -237,7 +243,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsinkinterface.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrc.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrcinterface.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/rfsa/adsp/libqvr_dsp_driver_skel.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libqvr_dsp_driver_skel.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/rfsa/adsp/libtracker_6dof_skel_8150.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libtracker_6dof_skel_8150.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/rfsa/adsp/libtracker_6dof_skel_8250.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libtracker_6dof_skel_8250.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/rfsa/adsp/libtracker_6dof_skel_8350.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/rfsa/adsp/libtracker_6dof_skel_8350.so \
@@ -293,6 +302,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.perf@2.0.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/vendor.qti.hardware.perf@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.perf@2.1.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/vendor.qti.hardware.perf@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.perf@2.2.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/vendor.qti.hardware.qccsyshal@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qccsyshal@1.0-halimpl.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qccsyshal@1.0.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qccvndhal@1.0.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qseecom@1.0.so \
@@ -438,6 +449,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqdMetaData.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqdMetaData.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqmi_cci_system.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqmi_encdec_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqmi_encdec_system.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqspmsvc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqspmsvc.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqti-at.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti-at.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqti-iopd-client_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti-iopd-client_system.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqti-perfd-client_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti-perfd-client_system.so \
@@ -445,6 +457,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqti_performance.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti_performance.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqti_vndfwk_detect.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti_vndfwk_detect.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqti_workloadclassifiermodel.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqti_workloadclassifiermodel.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrcamera_client.qti.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_client.qti.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqvrservice_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_ov7251_hvx_tuning.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqvrservice_ov9282_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_ov9282_hvx_tuning.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libsd_sdk_display.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsd_sdk_display.qti.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsdm-disp-apis.qti.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsdsprpc_system.so \
@@ -534,6 +551,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.perf@2.0.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/vendor.qti.hardware.perf@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.perf@2.1.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/vendor.qti.hardware.perf@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.perf@2.2.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccsyshal@1.0-halimpl.so \
+    vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccvndhal@1.0.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qseecom@1.0.so \
@@ -659,15 +678,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hostapd_cli:$(TARGET_COPY_OUT_VENDOR)/bin/hostapd_cli \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
+    vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.atrace@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.atrace@1.0-service \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.audio.service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.camera.provider@2.4-service_64:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.camera.provider@2.4-service_64 \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.clearkey \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
+    vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.1-service-qti \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.health@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health@2.1-service \
+    vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.ir@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.ir@1.0-service \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti \
     vendor/xiaomi/sm8350-common/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-service-qti \
@@ -871,7 +893,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/IPACM_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/IPACM_cfg.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/XiaoAiNiZaiNa.uim:$(TARGET_COPY_OUT_VENDOR)/etc/XiaoAiNiZaiNa.uim \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/XiaoAiTongXue.uim:$(TARGET_COPY_OUT_VENDOR)/etc/XiaoAiTongXue.uim \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/acdbdata/CDP/CDP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/CDP/CDP_Bluetooth_cal.acdb \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/acdbdata/CDP/CDP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/CDP/CDP_General_cal.acdb \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/acdbdata/CDP/CDP_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/CDP/CDP_Global_cal.acdb \
@@ -917,8 +938,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.00.pmd \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/bluetooth_qti_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_audio_policy_configuration.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_qti_hearing_aid_audio_policy_configuration.xml \
+    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/audio-test-config:$(TARGET_COPY_OUT_VENDOR)/etc/audio-test-config \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/camera/102_SummerDay.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/102_SummerDay.png \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/camera/103_Fantasy.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/103_Fantasy.png \
@@ -1052,8 +1072,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/face3d/qcnn_concat_file_model-0324_2_encrypted:$(TARGET_COPY_OUT_VENDOR)/etc/face3d/qcnn_concat_file_model-0324_2_encrypted \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/factory_cmd_config/modem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/factory_cmd_config/modem.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/fs_config_dirs:$(TARGET_COPY_OUT_VENDOR)/etc/fs_config_dirs \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/fs_config_files:$(TARGET_COPY_OUT_VENDOR)/etc/fs_config_files \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/ftm_test_config:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/ftm_test_config_lahaina-hdk-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_lahaina-hdk-snd-card \
@@ -1065,12 +1083,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/gps_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gps_diag.cfg \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/group:$(TARGET_COPY_OUT_VENDOR)/etc/group \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/hostapd/hostapd.accept:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.accept \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/hostapd/hostapd.deny:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd.deny \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/hostapd/hostapd_default.conf:$(TARGET_COPY_OUT_VENDOR)/etc/hostapd/hostapd_default.conf \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init.panel_info.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.panel_info.sh \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.qti.fm.sh \
+    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.atrace@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.atrace@1.0-service.rc \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.audio.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.rc \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service_64.rc \
@@ -1078,9 +1096,11 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.clearkey.rc \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
+    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.health@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health@2.1-service.rc \
+    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.ir@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.ir@1.0-service.rc \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/init/android.hardware.lights-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.lights-qti.rc \
@@ -1257,7 +1277,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/media_codecs_shima_v3_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_shima_v3_vendor.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/media_codecs_vendor_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_vendor_audio.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/media_lahaina/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_lahaina/video_system_specs.json \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/media_shima_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_shima_v1/video_system_specs.json \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/media_shima_v2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_shima_v2/video_system_specs.json \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/media_shima_v3/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_shima_v3/video_system_specs.json \
@@ -1290,76 +1309,12 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/models_knock_k2_20210401.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/models_knock_k2_20210401.dlc \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/modem/Diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/modem/Diag.cfg \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/passwd:$(TARGET_COPY_OUT_VENDOR)/etc/passwd \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/perf/thermal-boost.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/thermal-boost.conf \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.camera.full.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.full.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.camera.raw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.raw.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.light.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.ese.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hce.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.ese.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.se.omapi.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.uicc.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute-0.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level-1.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version-1_1.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.wifi.aware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.aware.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.wifi.passpoint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.passpoint.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.wifi.rtt.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.rtt.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.software.ipsec_tunnels.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnels.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.software.sip.voip.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.sip.voip.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/android.software.vulkan.deqp.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.android.nfc_extras.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/qti_fingerprint_interface.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/qti_fingerprint_interface.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_lahaina/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_lahaina/android.hardware.sensor.accelerometer.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_lahaina/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_lahaina/android.hardware.sensor.barometer.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_lahaina/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_lahaina/android.hardware.sensor.compass.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_lahaina/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_lahaina/android.hardware.sensor.gyroscope.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_lahaina/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_lahaina/android.hardware.sensor.hifi_sensors.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_lahaina/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_lahaina/android.hardware.sensor.light.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_lahaina/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_lahaina/android.hardware.sensor.proximity.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_lahaina/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_lahaina/android.hardware.sensor.stepcounter.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_lahaina/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_lahaina/android.hardware.sensor.stepdetector.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_shima/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_shima/android.hardware.sensor.accelerometer.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_shima/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_shima/android.hardware.sensor.barometer.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_shima/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_shima/android.hardware.sensor.compass.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_shima/android.hardware.sensor.gyroscope.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_shima/android.hardware.sensor.gyroscope.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_shima/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_shima/android.hardware.sensor.hifi_sensors.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_shima/android.hardware.sensor.light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_shima/android.hardware.sensor.light.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_shima/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_shima/android.hardware.sensor.proximity.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_shima/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_shima/android.hardware.sensor.stepcounter.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/sku_shima/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_shima/android.hardware.sensor.stepdetector.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/permissions/vendor.qti.hardware.factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.hardware.factory.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/platform_boost/boost_cap.xml:$(TARGET_COPY_OUT_VENDOR)/etc/platform_boost/boost_cap.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/platform_boost/boost_mode.xml:$(TARGET_COPY_OUT_VENDOR)/etc/platform_boost/boost_mode.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml \
@@ -1400,7 +1355,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_v2_cmd_mode_dsi_truly_panel.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_v2_video_mode_dsi_truly_panel.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_xiaomi_38_08_0a_cmd_mode_dsc_dsi_panel.xml \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/rcv.wav:$(TARGET_COPY_OUT_VENDOR)/etc/rcv.wav \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/rcv_ultrasound.wav:$(TARGET_COPY_OUT_VENDOR)/etc/rcv_ultrasound.wav \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
@@ -1622,7 +1576,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/tunings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/tunings.txt \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/tzlog.dict:$(TARGET_COPY_OUT_VENDOR)/etc/tzlog.dict \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/ultrasound.wav:$(TARGET_COPY_OUT_VENDOR)/etc/ultrasound.wav \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/video_system_specs.json \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/vmmgr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vmmgr.conf \
     vendor/xiaomi/sm8350-common/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
@@ -2085,6 +2038,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/hw/android.hardware.graphics.mapper@3.0-impl-qti-display.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@3.0-impl-qti-display.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/hw/android.hardware.health@2.0-impl-2.1-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.health@2.0-impl-2.1-qti.so \
+    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/hw/android.hardware.ir@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.ir@1.0-impl.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/hw/android.hardware.memtrack@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.memtrack@1.0-impl.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.renderscript@1.0-impl.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/hw/android.hardware.soundtrigger@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger@2.1-impl.so \
@@ -2723,7 +2677,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/soundfx/libreverbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libreverbwrapper.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/soundfx/libvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libvisualizer.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libvolumelistener.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.0.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.1.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.2.so \
@@ -2766,7 +2719,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.alarm@1.0.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.audiohalext@1.0.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/vendor.qti.hardware.automotive.vehicle@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.automotive.vehicle@1.0.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_audio@2.0.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.bluetooth_sar@1.1.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.btconfigstore@1.0.so \
@@ -3106,6 +3058,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@3.0-impl-qti-display.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@3.0-impl-qti-display.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.health@2.0-impl-2.1-qti.so \
+    vendor/xiaomi/sm8350-common/proprietary/vendor/lib64/hw/android.hardware.ir@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.ir@1.0-impl.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.memtrack@1.0-impl.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.renderscript@1.0-impl.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.soundtrigger@2.2-impl.so \
@@ -3707,7 +3660,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib64/soundfx/libreverbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libreverbwrapper.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib64/soundfx/libvisualizer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvisualizer.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libvolumelistener.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib64/unnhal-acc-common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-common.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib64/unnhal-acc-gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-gpu.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib64/unnhal-acc-htp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-htp.so \
@@ -3918,6 +3870,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
 PRODUCT_PACKAGES += \
+    CACertService \
     CneApp \
     EidService_V2 \
     IWlanService \
@@ -3927,6 +3880,7 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     ConfURIDialer \
     DeviceInfo \
+    DeviceStatisticsService \
     DynamicDDSService \
     NQNfcNci \
     PerformanceMode \
@@ -3952,10 +3906,8 @@ PRODUCT_PACKAGES += \
     uimremoteserver \
     workloadclassifier \
     xdivert \
-    CarrierConfig \
     QAS_DVC_MSP \
     WfdService \
-    beyondGnssService \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \
@@ -3966,6 +3918,7 @@ PRODUCT_PACKAGES += \
     audiosphere \
     com.nxp.nfc.nq \
     com.qti.dpmframework \
+    com.qti.location.sdk \
     com.qti.media.secureprocessor \
     com.qualcomm.qti.imscmservice-V2.0-java \
     com.qualcomm.qti.imscmservice-V2.1-java \
