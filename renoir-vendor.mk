@@ -6,10 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/renoir
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/renoir/proprietary/system/app/MobileFeliCaClient/MobileFeliCaClient.apk:$(TARGET_COPY_OUT_SYSTEM)/app/MobileFeliCaClient/MobileFeliCaClient.apk \
-    vendor/xiaomi/renoir/proprietary/system/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk:$(TARGET_COPY_OUT_SYSTEM)/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk \
-    vendor/xiaomi/renoir/proprietary/system/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk:$(TARGET_COPY_OUT_SYSTEM)/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk \
-    vendor/xiaomi/renoir/proprietary/system/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk:$(TARGET_COPY_OUT_SYSTEM)/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk \
     vendor/xiaomi/renoir/proprietary/product/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/xiaomi/renoir/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/xiaomi/renoir/proprietary/system_ext/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
@@ -241,6 +237,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/renoir/proprietary/system_ext/lib64/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.voiceprint@1.0.so
 
 PRODUCT_PACKAGES += \
+    MobileFeliCaClient \
+    MobileFeliCaMenuMainApp \
+    MobileFeliCaSettingApp \
+    MobileFeliCaWebPluginBoot \
     PowerOffAlarm \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
