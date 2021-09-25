@@ -5,45 +5,45 @@
 soong_namespace {
 }
 
-android_app_import {
-	name: "MobileFeliCaClient",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/MobileFeliCaClient/MobileFeliCaClient.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "MobileFeliCaMenuMainApp",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "MobileFeliCaSettingApp",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
-	name: "MobileFeliCaWebPluginBoot",
-	owner: "xiaomi",
-	apk: "proprietary/system_ext/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-}
+// android_app_import {
+// 	name: "MobileFeliCaClient",
+// 	owner: "xiaomi",
+// 	apk: "proprietary/system/app/MobileFeliCaClient/MobileFeliCaClient.apk",
+// 	presigned: true,
+// 	dex_preopt: {
+// 		enabled: false,
+// 	},
+// }
+// 
+// android_app_import {
+// 	name: "MobileFeliCaMenuMainApp",
+// 	owner: "xiaomi",
+// 	apk: "proprietary/system/app/MobileFeliCaMenuMainApp/MobileFeliCaMenuMainApp.apk",
+// 	presigned: true,
+// 	dex_preopt: {
+// 		enabled: false,
+// 	},
+// }
+// 
+// android_app_import {
+// 	name: "MobileFeliCaSettingApp",
+// 	owner: "xiaomi",
+// 	apk: "proprietary/system/app/MobileFeliCaSettingApp/MobileFeliCaSettingApp.apk",
+// 	presigned: true,
+// 	dex_preopt: {
+// 		enabled: false,
+// 	},
+// }
+// 
+// android_app_import {
+// 	name: "MobileFeliCaWebPluginBoot",
+// 	owner: "xiaomi",
+// 	apk: "proprietary/system/app/MobileFeliCaWebPluginBoot/MobileFeliCaWebPluginBoot.apk",
+// 	presigned: true,
+// 	dex_preopt: {
+// 		enabled: false,
+// 	},
+// }
 
 android_app_import {
 	name: "PowerOffAlarm",
