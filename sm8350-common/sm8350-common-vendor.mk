@@ -7,26 +7,19 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
-    vendor/xiaomi/sm8350-common/proprietary/odm/ueventd.rc:$(TARGET_COPY_OUT_ODM)/ueventd.rc \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/permissions/ims_ext_common.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/ims_ext_common.xml \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/public.libraries-qti.txt:$(TARGET_COPY_OUT_PRODUCT)/etc/public.libraries-qti.txt \
     vendor/xiaomi/sm8350-common/proprietary/product/etc/security/fsverity/play_store_fsi_cert.der:$(TARGET_COPY_OUT_PRODUCT)/etc/security/fsverity/play_store_fsi_cert.der \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/bt_logger:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/bt_logger \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/diag_callback_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_callback_sample_system \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/diag_dci_sample_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_dci_sample_system \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/diag_mdlog_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/diag_mdlog_system \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/dun-server:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dun-server \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/perfservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/perfservice \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/qccsyshalservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qccsyshalservice \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/qspmsvc:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qspmsvc \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/rtspclient:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/rtspclient \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/rtspserver:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/rtspserver \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/sigma_miracasthalservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice \
-    vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/test_diag_system:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/test_diag_system \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/bluetooth/bt_configstore.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bluetooth/bt_configstore.conf \
     vendor/xiaomi/sm8350-common/proprietary/system_ext/etc/bluetooth/bt_profile.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/bluetooth/bt_profile.conf \
@@ -1905,28 +1898,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/misound_karaokemix_res.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_karaokemix_res.bin \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res_headphone.bin \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res_spk.bin \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/libbenchmark_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libbenchmark_skel.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/libfastrpc_tests1_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libfastrpc_tests1_skel.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/libfastrpc_tests_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libfastrpc_tests_skel.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/libhap_power_test_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libhap_power_test_skel.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/librpcperf1_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/librpcperf1_skel.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/librpcperf_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/librpcperf_skel.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/libtest_dl1_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libtest_dl1_skel.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/libtest_dl_perf1_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libtest_dl_perf1_skel.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/libtest_dl_perf_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libtest_dl_perf_skel.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/libtest_dl_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libtest_dl_skel.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/libunsigned_pd_test_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/libunsigned_pd_test_skel.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_dep1.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_dep1.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_dep2.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_dep2.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_nop.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_nop.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_128k.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_128k.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_16k.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_16k.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_1MB.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_1MB.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_256k.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_256k.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_32k.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_32k.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_512k.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_512k.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_64k.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_64k.so \
-    vendor/xiaomi/sm8350-common/proprietary/vendor/lib/rfsa/adsp/tests/test_elf_size_768k.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/tests/test_elf_size_768k.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/soundfx/libaudiopreprocessing.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing.so \
     vendor/xiaomi/sm8350-common/proprietary/vendor/lib/soundfx/libbundlewrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libbundlewrapper.so \
