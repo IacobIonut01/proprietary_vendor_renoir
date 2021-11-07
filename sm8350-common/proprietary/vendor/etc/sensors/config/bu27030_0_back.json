@@ -1,8 +1,8 @@
 {
   "config":
   {
-    "hw_platform": ["MTP", "Dragon", "Surf","VENUS"],
-    "soc_id": ["291", "246", "305", "341", "356", "415"]
+    "hw_platform": ["MTP", "Dragon", "Surf","RENOIR"],
+    "soc_id": ["291", "246", "305", "341", "356", "450"]
   },
   "bu27030_back":{
     "owner": "sns_bu27030_back",

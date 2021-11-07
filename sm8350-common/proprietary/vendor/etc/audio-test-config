@@ -1,148 +1,73 @@
 #playback_rcv
 #playback_rcv_hp
+#enable_receiver
 enable
-TERT_TDM_RX_0 Audio Mixer MultiMedia1:1
-TERT_TDM_RX_0 SampleRate:KHZ_96
-TERT_TDM_RX_0 Channels:One
-TERT_TDM_RX_0 Format:S24_LE
-RCV PCM Source:ASP
-RCV AMP PCM Gain:0
-RCV DRE DRE Switch:1
-RCV ASP TX1 Source:Zero
-RCV ASP TX2 Source:DSPTX1
-RCV DSP RX1 Source:ASPRX1
-RCV DSP RX2 Source:ASPRX2
-RCV ASPRX1 Slot Position:0:
-RCV ASPRX2 Slot Position:2:
+TERT_MI2S_RX Audio Mixer MultiMedia1:1
+TERT_MI2S_RX Channels:Two
+TERT_MI2S_RX Format:S24_LE
+TERT_MI2S_RX SampleRate:KHZ_96
+TFA Profile:handset
+
+#disable_receiver
 disable
-TERT_TDM_RX_0 Audio Mixer MultiMedia1:0
-TERT_TDM_RX_0 SampleRate:KHZ_96
-TERT_TDM_RX_0 Channels:Two
-TERT_TDM_RX_0 Format:S24_LE
-RCV PCM Source:None
-RCV AMP PCM Gain:0
-RCV DRE DRE Switch:1
-RCV ASP TX1 Source:Zero
-RCV ASP TX2 Source:Zero
-RCV DSP RX1 Source:Zero
-RCV DSP RX2 Source:Zero
+TERT_MI2S_RX Audio Mixer MultiMedia1:0
+TERT_MI2S_RX Channels:Two
+TERT_MI2S_RX Format:S24_LE
+TERT_MI2S_RX SampleRate:KHZ_96
+TFA Profile:Powerdown
+
 
 #playback_spk
 #playback_spk_hp
 enable
-TERT_TDM_RX_0 Audio Mixer MultiMedia1:1
-TERT_TDM_RX_0 SampleRate:KHZ_96
-TERT_TDM_RX_0 Channels:Two
-TERT_TDM_RX_0 Format:S24_LE
-PCM Source:ASP
-RCV PCM Source:ASP
-AMP PCM Gain:18
-RCV AMP PCM Gain:18
-DRE DRE Switch:1
-RCV DRE DRE Switch:1
-DSP RX1 Source:ASPRX1
-DSP RX2 Source:ASPRX1
-ASPRX1 Slot Position:1
-ASPRX2 Slot Position:4
-RCV DSP RX1 Source:ASPRX1
-RCV DSP RX2 Source:ASPRX2
-RCV ASPRX1 Slot Position:0
-RCV ASPRX2 Slot Position:2
-ASP TX1 Source:DSPTX1
-ASP TX2 Source:Zero
-RCV ASP TX1 Source:Zero
-RCV ASP TX2 Source:DSPTX1
+TERT_MI2S_RX Audio Mixer MultiMedia1:1
+TERT_MI2S_RX Channels:Two
+TERT_MI2S_RX Format:S24_LE
+TERT_MI2S_RX SampleRate:KHZ_96
+TFA Profile:right
 
 disable
-Cirrus SP Usecase Config:Music
-PCM Source:None
-RCV PCM Source:None
-AMP PCM Gain:18
-RCV AMP PCM Gain:0
-TERT_TDM_RX_0 Audio Mixer MultiMedia1:0
-TERT_TDM_RX_0 SampleRate:KHZ_96
-TERT_TDM_RX_0 Channels:Two
-TERT_TDM_RX_0 Format:S24_LE
-DRE DRE Switch:1
-RCV DRE DRE Switch:1
-DSP RX1 Source:Zero
-DSP RX2 Source:Zero
-RCV DSP RX1 Source:Zero
-RCV DSP RX2 Source:Zero
-ASP TX1 Source:Zero
-ASP TX2 Source:Zero
-RCV ASP TX1 Source:Zero
-RCV ASP TX2 Source:Zero
+TERT_MI2S_RX Audio Mixer MultiMedia1:0
+TERT_MI2S_RX Channels:Two
+TERT_MI2S_RX Format:S24_LE
+TERT_MI2S_RX SampleRate:KHZ_96
+TFA Profile:Powerdown
+
 
 #playback_top-spk
 #playback_top-spk_hp
+#enable_top-spk
 enable
-TERT_TDM_RX_0 Audio Mixer MultiMedia1:1
-TERT_TDM_RX_0 SampleRate:KHZ_96
-TERT_TDM_RX_0 Channels:One
-TERT_TDM_RX_0 Format:S24_LE
-PCM Source:None
-RCV PCM Source:ASP
-RCV AMP PCM Gain:18
-RCV DRE DRE Switch:1
-RCV ASP TX1 Source:Zero
-RCV ASP TX2 Source:DSPTX1
-RCV DSP RX1 Source:ASPRX1
-RCV DSP RX2 Source:ASPRX2
-RCV ASPRX1 Slot Position:0
-RCV ASPRX2 Slot Position:2
+TERT_MI2S_RX Audio Mixer MultiMedia1:1
+TERT_MI2S_RX Channels:Two
+TERT_MI2S_RX Format:S24_LE
+TERT_MI2S_RX SampleRate:KHZ_96
+TFA Profile:left
 
-
+#disable_top-spk
 disable
-Cirrus SP Usecase Config:Music
-PCM Source:None
-RCV PCM Source:None
-RCV AMP PCM Gain:0
-TERT_TDM_RX_0 Audio Mixer MultiMedia1:0
-TERT_TDM_RX_0 SampleRate:KHZ_96
-TERT_TDM_RX_0 Channels:Two
-TERT_TDM_RX_0 Format:S24_LE
-RCV DRE DRE Switch:1
-RCV ASP TX1 Source:Zero
-RCV ASP TX2 Source:Zero
-RCV DSP RX1 Source:Zero
-RCV DSP RX2 Source:Zero
+TERT_MI2S_RX Audio Mixer MultiMedia1:0
+TERT_MI2S_RX Channels:Two
+TERT_MI2S_RX Format:S24_LE
+TERT_MI2S_RX SampleRate:KHZ_96
+TFA Profile:Powerdown
 
 
 #playback_bot-spk
 #playback_bot-spk_hp
 enable
-TERT_TDM_RX_0 Audio Mixer MultiMedia1:1
-TERT_TDM_RX_0 SampleRate:KHZ_96
-TERT_TDM_RX_0 Channels:Two
-TERT_TDM_RX_0 Format:S24_LE
-PCM Source:ASP
-RCV PCM Source:None
-AMP PCM Gain:18
-DRE DRE Switch:1
-DSP RX1 Source:ASPRX1
-DSP RX2 Source:ASPRX1
-ASPRX1 Slot Position:1
-ASPRX2 Slot Position:4
-ASP TX1 Source:DSPTX1
-ASP TX2 Source:Zero
-
+TERT_MI2S_RX Audio Mixer MultiMedia1:1
+TERT_MI2S_RX Channels:Two
+TERT_MI2S_RX Format:S24_LE
+TERT_MI2S_RX SampleRate:KHZ_96
+TFA Profile:right
 
 disable
-Cirrus SP Usecase Config:Music
-PCM Source:None
-RCV PCM Source:None
-AMP PCM Gain:18
-TERT_TDM_RX_0 Audio Mixer MultiMedia1:0
-TERT_TDM_RX_0 SampleRate:KHZ_96
-TERT_TDM_RX_0 Channels:Two
-TERT_TDM_RX_0 Format:S24_LE
-DRE DRE Switch:1
-DSP RX1 Source:Zero
-DSP RX2 Source:Zero
-ASP TX1 Source:Zero
-ASP TX2 Source:Zero
-
+TERT_MI2S_RX Audio Mixer MultiMedia1:0
+TERT_MI2S_RX Channels:Two
+TERT_MI2S_RX Format:S24_LE
+TERT_MI2S_RX SampleRate:KHZ_96
+TFA Profile:Powerdown
 
 
 #playback_headphone
@@ -164,7 +89,6 @@ HPHR_COMP Switch:1
 HPHL_RDAC Switch:1
 HPHR_RDAC Switch:1
 
-
 disable
 RX_CDC_DMA_RX_0 Audio Mixer MultiMedia1:0
 RX_MACRO RX0 MUX:ZERO
@@ -182,59 +106,43 @@ HPHL_RDAC Switch:0
 HPHR_RDAC Switch:0
 
 
-
-
 #playback_us
 enable
-TERT_TDM_RX_0 Audio Mixer MultiMedia1:1
-TERT_TDM_RX_0 SampleRate:KHZ_96
-TERT_TDM_RX_0 Format:S24_LE
-TERT_TDM_RX_0 Channels:One
+TERT_MI2S_RX Audio Mixer MultiMedia1:1
+TERT_MI2S_RX SampleRate:KHZ_96
+TERT_MI2S_RX Format:S24_LE
+TERT_MI2S_RX Channels:Two
 Audio Stream 0 App Type Cfg:69936 10001 96000 87 0
-PCM Source:None
-RCV PCM Source:DSP
-RCV AMP PCM Gain:0
-RCV DRE DRE Switch:1
-RCV ASP TX1 Source:Zero
-RCV ASP TX2 Source:DSPTX1
-RCV DSP RX1 Source:ASPRX1
-RCV DSP RX2 Source:ASPRX2
-RCV ASPRX1 Slot Position:0
-RCV ASPRX2 Slot Position:2
-
+TFA Profile:handset
 
 disable
-Cirrus SP Usecase Config:Music
-PCM Source:None
-RCV PCM Source:None
 Audio Stream 0 App Type Cfg:69936 10001 48000 87 0
-RCV AMP PCM Gain:0
-RCV DRE DRE Switch:1
-TERT_TDM_RX_0 Channels:Two
-TERT_TDM_RX_0 Audio Mixer MultiMedia1:0
-RCV ASP TX1 Source:Zero
-RCV ASP TX2 Source:Zero
-RCV DSP RX1 Source:Zero
-RCV DSP RX2 Source:Zero
+TERT_MI2S_RX Audio Mixer MultiMedia1:0
+TERT_MI2S_RX Channels:Two
+TERT_MI2S_RX Format:S24_LE
+TERT_MI2S_RX SampleRate:KHZ_96
+TFA Profile:powerdown
 
 #capture_main-mic
 #enable_main-mic
 enable
+Audio Stream Capture 0 App Type Cfg:69938 4 48000 0 0
 TX DEC1 MUX:SWR_MIC
-TX SMIC MUX1:SWR_MIC4
+TX SMIC MUX1:SWR_MIC0
 TX_AIF1_CAP Mixer DEC1:1
 TX0 MODE:ADC_LP
-ADC1 ChMap:SWRM_TX2_CH1
+ADC1 ChMap:SWRM_TX1_CH1
 TX_CDC_DMA_TX_3 Channels:One
 ADC1_MIXER Switch:1
-ADC1 Volume:8
+ADC1 Volume:6
 MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
 TX_CDC_DMA_TX_3 SampleRate:$rate
 
 #disable_main-mic
 disable
+Audio Stream Capture 0 App Type Cfg:69938 4 48000 0 0
 TX0 MODE:ADC_LP
-ADC1 ChMap:SWRM_TX2_CH1
+ADC1 ChMap:SWRM_TX1_CH1
 TX SMIC MUX1:ZERO
 TX_CDC_DMA_TX_3 Channels:One
 TX_AIF1_CAP Mixer DEC1:0
@@ -246,8 +154,8 @@ TX_CDC_DMA_TX_3 SampleRate:KHZ_48
 #capture_top-mic
 #enable_top-mic
 enable
+Audio Stream Capture 0 App Type Cfg:69938 4 48000 0 0
 TX_CDC_DMA_TX_3 Channels:One
-
 TX DEC3 MUX:SWR_MIC
 TX SMIC MUX3:SWR_MIC9
 TX_AIF1_CAP Mixer DEC3:1
@@ -255,12 +163,13 @@ ADC4 ChMap:SWRM_TX3_CH2
 ADC4 MUX:INP5
 TX3 MODE:ADC_LP
 ADC4_MIXER Switch:1
-ADC4 Volume:8
+ADC4 Volume:6
 MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
 TX_CDC_DMA_TX_3 SampleRate:$rate
 
 #disable_top-mic
 disable
+Audio Stream Capture 0 App Type Cfg:69938 4 48000 0 0
 TX SMIC MUX3:ZERO
 TX_AIF1_CAP Mixer DEC3:0
 ADC4 ChMap:SWRM_TX3_CH2
@@ -274,32 +183,27 @@ TX_CDC_DMA_TX_3 SampleRate:KHZ_48
 #capture_us
 enable
 Audio Stream Capture 0 App Type Cfg:69938 19 96000 196
-TX_AIF2_CAP Mixer DEC2:1
-TX DEC2 MUX:SWR_MIC
-TX SMIC MUX2:SWR_MIC8
+TX_AIF2_CAP Mixer DEC4:1
+TX DEC4 MUX:SWR_MIC
+TX SMIC MUX4:SWR_MIC8
+TX_CDC_DMA_TX_4 Channels:One
 ADC3 ChMap:SWRM_TX3_CH1
-HDR34 MUX:HDR34
 ADC3_MIXER Switch:1
 TX2 MODE:ADC_LP
-ADC3 Volume:8
-TX_DEC2 Volume:84
-TX_CDC_DMA_TX_4 Channels:One
+ADC3 Volume:6
+HDR34 MUX:HDR34
 MultiMedia1 Mixer TX_CDC_DMA_TX_4:1
 TX_CDC_DMA_TX_4 SampleRate:$rate
 
 disable
-ADC2 ChMap:ZERO
+TX SMIC MUX4:ZERO
 ADC3 ChMap:ZERO
-ADC4 ChMap:SWRM_TX3_CH2
-TX_AIF2_CAP Mixer DEC2:0
-TX DEC2 MUX:SWR_MIC
-TX SMIC MUX2:ZERO
-HDR34 MUX:NO_HDR34
-ADC3_MIXER Switch:0
-TX2 MODE:ADC_LP
-
-TX_DEC2 Volume:84
+TX_AIF2_CAP Mixer DEC4:0
+TX DEC4 MUX:SWR_MIC
+TX SMIC MUX4:ZERO
 TX_CDC_DMA_TX_4 Channels:One
+ADC3_MIXER Switch:0
+ADC3 Volume:6
 MultiMedia1 Mixer TX_CDC_DMA_TX_4:0
 TX_CDC_DMA_TX_4 SampleRate:KHZ_96
 
@@ -308,8 +212,8 @@ TX_CDC_DMA_TX_4 SampleRate:KHZ_96
 enable
 TX0 MODE:ADC_LP
 ADC1_MIXER Switch:1
-ADC1 ChMap:SWRM_TX2_CH1
-TX SMIC MUX0:SWR_MIC4
+ADC1 ChMap:SWRM_TX1_CH1
+TX SMIC MUX0:SWR_MIC0
 TX DEC0 MUX:SWR_MIC
 RX INT0_1 MIX1 INP0:DEC0
 RX INT1_1 MIX1 INP0:DEC0
@@ -324,7 +228,7 @@ HPHR_COMP Switch:0
 RDAC3_MUX:RX1
 HPHL_RDAC Switch:1
 HPHR_RDAC Switch:1
-ADC1 Volume:8
+ADC1 Volume:6
 HPHL Volume:20
 HPHR Volume:20
 disable
@@ -335,8 +239,8 @@ ADC2 MUX:INP2
 HDR12 MUX:NO_HDR12
 TX1 MODE:ADC_LP
 ADC2_MIXER Switch:1
-ADC2 ChMap:SWRM_TX2_CH2
-TX SMIC MUX0:SWR_MIC5
+ADC2 ChMap:SWRM_TX1_CH2
+TX SMIC MUX0:SWR_MIC1
 TX DEC0 MUX:SWR_MIC
 RX INT0_1 MIX1 INP0:DEC0
 RX INT1_1 MIX1 INP0:DEC0
@@ -376,7 +280,7 @@ HPHR_COMP Switch:0
 RDAC3_MUX:RX1
 HPHL_RDAC Switch:1
 HPHR_RDAC Switch:1
-ADC4 Volume:8
+ADC4 Volume:6
 HPHL Volume:20
 HPHR Volume:20
 disable
@@ -398,7 +302,7 @@ RX INT1_1 MIX1 INP0:ZERO
 RX INT0_1 MIX1 INP0:ZERO
 TX DEC0 MUX:ZERO
 TX SMIC MUX0:ZERO
-ADC1 ChMap:SWRM_TX2_CH1
+ADC1 ChMap:SWRM_TX1_CH1
 ADC2 ChMap:ZERO
 ADC3 ChMap:ZERO
 ADC4 ChMap:SWRM_TX3_CH2

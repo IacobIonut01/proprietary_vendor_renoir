@@ -24,7 +24,7 @@ dsiMap：
 -->
 
 <SarDsiConfig>
-    <deviceSarConfig device_name="venus">
+    <deviceSarConfig device_name="renoir">
         <!-- <prop prop_name="persist.vendor.radio.dynamic_sar">1</prop> -->
         <prop prop_name="ro.boot.hwc">default</prop>
         <prop prop_name="ro.product.mod_device"></prop>

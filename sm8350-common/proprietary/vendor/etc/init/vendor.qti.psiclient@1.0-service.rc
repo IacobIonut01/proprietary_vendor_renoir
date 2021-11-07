@@ -12,9 +12,9 @@ service psiclient /vendor/bin/hw/vendor.qti.psiclient@1.0-service
 on property:vendor.pasr.activemode.enabled=false
     stop psiclient
 
+on property:vendor.pasr.enabled=false
+    stop psiclient
+
 # Start psi service after boot completed
 on property:vendor.pasr.activemode.enabled=true && property:vendor.pasr.enabled=true
     start psiclient
-
-on property:vendor.pasr.enabled=false
-    stop psiclient

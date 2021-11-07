@@ -1,8 +1,8 @@
 {
   "config":
   {
-    "hw_platform": ["MTP", "Dragon", "VENUS"],
-    "soc_id": ["291", "246", "339", "415"]
+    "hw_platform": ["MTP", "Dragon", "RENOIR"],
+    "soc_id": ["291", "246", "339", "450"]
   },
   "tcs3408":{
     "owner": "sns_tcs3408",

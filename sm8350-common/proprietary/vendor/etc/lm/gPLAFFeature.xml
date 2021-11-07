@@ -21,7 +21,8 @@
     <Name>gPLAFFeature</Name>
     <Libname>libgplaf.so</Libname>
     <Configs target="shima">
-        <Resources>0x40800200,0x40800000,0x40800100</Resources>
+        <Resources_Big>0x40800200,0x40800000</Resources_Big>
+        <Resources_Lil>0x40800100</Resources_Lil>
     </Configs>
     <Triggers>
         <Trigger>
@@ -48,7 +49,7 @@
            <AsyncType>-1</AsyncType>
         </Trigger>
     </Triggers>
-    <IgnoredApps>
+    <IgnoredApps target="shima">
         <App>com.google.android.gms</App>
         <App>com.android.vending</App>
         <App>com.google.android.projection.gearhead</App>

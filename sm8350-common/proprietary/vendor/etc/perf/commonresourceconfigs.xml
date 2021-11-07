@@ -38,7 +38,8 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x2" Node="/sys/module/lpm_levels/parameters/bias_hyst" />
         <Minor OpcodeValue="0x3" Node="/sys/module/lpm_levels/parameters/ref_stddev" />
         <Minor OpcodeValue="0x4" Node="/sys/module/lpm_levels/parameters/tmr_add" />
-        <Minor OpcodeValue="0x5" Node="/sys/module/lpm_levels/parameters/lpm_ipi_prediction" Supported="no" />
+	<Minor OpcodeValue="0x5" Node="/sys/module/lpm_levels/parameters/lpm_ipi_prediction" Supported="no" />
+	<Minor OpcodeValue="0x6" Node="/sys/module/lpm_levels/parameters/sleep_disabled" Supported="yes" />
     <!-- power collapse major end -->
 
     <!-- cpufreq major start -->
@@ -107,6 +108,8 @@ need to be added just before the end of it's major group. -->
         <Minor OpcodeValue="0x32" Node="/proc/sys/kernel/walt_rtg_cfs_boost_prio" />
         <Minor OpcodeValue="0x33" Node="/proc/sys/kernel/sched_force_lb_enable" Supported="yes" />
         <Minor OpcodeValue="0x34" Node="/proc/%d/sched_low_latency" Supported="yes" />
+        <Minor OpcodeValue="0x35" Node="/proc/irq/%d/smp_affinity_list" Supported="yes" /> <!-- k9 is 18 -->
+        <Minor OpcodeValue="0x36" Node="/proc/sys/kernel/sched_min_granularity_ns" />
     <!-- sched major end -->
 
     <!-- core hotplug major start -->

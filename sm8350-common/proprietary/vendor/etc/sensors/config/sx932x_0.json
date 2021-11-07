@@ -1,8 +1,8 @@
 {
   "config":
   {
-    "hw_platform": ["MTP", "Dragon", "Surf", "HDK", "VENUS"],
-    "soc_id": ["291", "246", "305", "341", "415"]
+    "hw_platform": ["MTP", "Dragon", "Surf", "HDK", "IDP"],
+    "soc_id": ["291", "246", "305", "341", "450"]
   },
   "sx932x_0":{
     "owner": "sx932x_0",

@@ -1,7 +1,7 @@
 {
   "config":{
-    "hw_platform": ["MTP", "Dragon", "Surf", "VENUS"],
-    "soc_id": ["291", "246", "305", "321", "339", "356", "415"]
+    "hw_platform": ["MTP", "Dragon", "Surf", "IDP"],
+    "soc_id": ["291", "246", "305", "321", "339", "356", "450"]
   },
   "ak0991x_0":{
     "owner": "sns_ak0991x",

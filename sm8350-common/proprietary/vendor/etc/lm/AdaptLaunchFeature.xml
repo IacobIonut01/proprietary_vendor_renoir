@@ -37,7 +37,7 @@
                     <AsyncId>VENDOR_HINT_TAP_EVENT</AsyncId>
                 </Trigger>
             </Triggers>
-            <Samples>160</Samples>
+            <Samples>300</Samples>
             <Fields>
                 <Field>VmRss:</Field>
             </Fields>

@@ -118,36 +118,101 @@
         <nightview_highratio>0.3</nightview_highratio>
   </nightview>
 
-  <dxo_nightview>
-        <dxo_nightview_light>25.0</dxo_nightview_light>
-	      <dxo_nightview_mlight>80.0</dxo_nightview_mlight>
-        <dxo_nightview_iso>1000.0</dxo_nightview_iso>
-        <dxo_nightview_expo_time>20.0</dxo_nightview_expo_time>
-        <dxo_nightview_bright_thresh>240</dxo_nightview_bright_thresh>
-        <dxo_nightview_bright_ratio_thresh>0.004</dxo_nightview_bright_ratio_thresh>
-        <dxo_nightview_dark_thresh>50</dxo_nightview_dark_thresh>
-        <dxo_nightview_dark_ratio_thresh>0.18</dxo_nightview_dark_ratio_thresh>
+  <dxo_nightview_0 feature="1X_auto_default" enable="true">
+        <dxo_nightview_light>10.0</dxo_nightview_light>
+        <dxo_nightview_bright_ratio_thresh>0.008</dxo_nightview_bright_ratio_thresh>
+        <dxo_nightview_dark_ratio_thresh>0.3</dxo_nightview_dark_ratio_thresh>
         <dxo_lux_index_thresh>310</dxo_lux_index_thresh>
-        <dxo_middle_low>80</dxo_middle_low>
-        <dxo_middle_high>200</dxo_middle_high>
-        <dxo_middle_ratio_thresh>0.6</dxo_middle_ratio_thresh>
+        <dxo_middle_ratio_thresh>0.4</dxo_middle_ratio_thresh>
 
-        <dxo_lux_index_thresh_face>550.0</dxo_lux_index_thresh_face>
+        <dxo_lux_index_thresh_face>400.0</dxo_lux_index_thresh_face>
         <dxo_nightview_light_face>10.0</dxo_nightview_light_face>
         <dxo_nightview_dark_ratio_thresh_face>0.18</dxo_nightview_dark_ratio_thresh_face>
         <dxo_nightview_middle_ratio_thresh_face>0.5</dxo_nightview_middle_ratio_thresh_face>
         <dxo_nightview_bright_ratio_thresh_face>0.008</dxo_nightview_bright_ratio_thresh_face>
 
-        <dxo_nightview_extreme_dark_lux>450.0</dxo_nightview_extreme_dark_lux>
+        <dxo_nightview_extreme_dark_lux>470.0</dxo_nightview_extreme_dark_lux>
+  </dxo_nightview_0>
 
+  <dxo_nightview_1 feature="1X_auto2" enable="false">
+        <dxo_nightview_light>10.0</dxo_nightview_light>
+        <dxo_nightview_bright_ratio_thresh>0.008</dxo_nightview_bright_ratio_thresh>
+        <dxo_nightview_dark_ratio_thresh>0.3</dxo_nightview_dark_ratio_thresh>
+        <dxo_lux_index_thresh>310</dxo_lux_index_thresh>
+        <dxo_middle_ratio_thresh>0.4</dxo_middle_ratio_thresh>
+
+        <dxo_lux_index_thresh_face>400.0</dxo_lux_index_thresh_face>
+        <dxo_nightview_light_face>10.0</dxo_nightview_light_face>
+        <dxo_nightview_dark_ratio_thresh_face>0.18</dxo_nightview_dark_ratio_thresh_face>
+        <dxo_nightview_middle_ratio_thresh_face>0.5</dxo_nightview_middle_ratio_thresh_face>
+        <dxo_nightview_bright_ratio_thresh_face>0.008</dxo_nightview_bright_ratio_thresh_face>
+
+        <dxo_nightview_extreme_dark_lux>470.0</dxo_nightview_extreme_dark_lux>
+  </dxo_nightview_1>
+
+  <dxo_nightview_2 feature="0.6X" enable="false">
+        <dxo_nightview_light>10.0</dxo_nightview_light>
+        <dxo_nightview_bright_ratio_thresh>0.008</dxo_nightview_bright_ratio_thresh>
+        <dxo_nightview_dark_ratio_thresh>0.3</dxo_nightview_dark_ratio_thresh>
+        <dxo_lux_index_thresh>310</dxo_lux_index_thresh>
+        <dxo_middle_ratio_thresh>0.4</dxo_middle_ratio_thresh>
+
+        <dxo_lux_index_thresh_face>400.0</dxo_lux_index_thresh_face>
+        <dxo_nightview_light_face>10.0</dxo_nightview_light_face>
+        <dxo_nightview_dark_ratio_thresh_face>0.18</dxo_nightview_dark_ratio_thresh_face>
+        <dxo_nightview_middle_ratio_thresh_face>0.5</dxo_nightview_middle_ratio_thresh_face>
+        <dxo_nightview_bright_ratio_thresh_face>0.008</dxo_nightview_bright_ratio_thresh_face>
+
+        <dxo_nightview_extreme_dark_lux>470.0</dxo_nightview_extreme_dark_lux>
+  </dxo_nightview_2>
+
+  <dxo_nightview_3 feature="5X" enable="false">
+        <dxo_nightview_light>10.0</dxo_nightview_light>
+        <dxo_nightview_bright_ratio_thresh>0.008</dxo_nightview_bright_ratio_thresh>
+        <dxo_nightview_dark_ratio_thresh>0.3</dxo_nightview_dark_ratio_thresh>
+        <dxo_lux_index_thresh>310</dxo_lux_index_thresh>
+        <dxo_middle_ratio_thresh>0.4</dxo_middle_ratio_thresh>
+
+        <dxo_lux_index_thresh_face>400.0</dxo_lux_index_thresh_face>
+        <dxo_nightview_light_face>10.0</dxo_nightview_light_face>
+        <dxo_nightview_dark_ratio_thresh_face>0.18</dxo_nightview_dark_ratio_thresh_face>
+        <dxo_nightview_middle_ratio_thresh_face>0.5</dxo_nightview_middle_ratio_thresh_face>
+        <dxo_nightview_bright_ratio_thresh_face>0.008</dxo_nightview_bright_ratio_thresh_face>
+
+        <dxo_nightview_extreme_dark_lux>470.0</dxo_nightview_extreme_dark_lux>
+  </dxo_nightview_3>
+
+  <dxo_nightview_4 feature="bokeh" enable="false">
+        <dxo_nightview_light>10.0</dxo_nightview_light>
+        <dxo_nightview_bright_ratio_thresh>0.008</dxo_nightview_bright_ratio_thresh>
+        <dxo_nightview_dark_ratio_thresh>0.3</dxo_nightview_dark_ratio_thresh>
+        <dxo_lux_index_thresh>310</dxo_lux_index_thresh>
+        <dxo_middle_ratio_thresh>0.4</dxo_middle_ratio_thresh>
+
+        <dxo_lux_index_thresh_face>400.0</dxo_lux_index_thresh_face>
+        <dxo_nightview_light_face>10.0</dxo_nightview_light_face>
+        <dxo_nightview_dark_ratio_thresh_face>0.18</dxo_nightview_dark_ratio_thresh_face>
+        <dxo_nightview_middle_ratio_thresh_face>0.5</dxo_nightview_middle_ratio_thresh_face>
+        <dxo_nightview_bright_ratio_thresh_face>0.008</dxo_nightview_bright_ratio_thresh_face>
+
+        <dxo_nightview_extreme_dark_lux>470.0</dxo_nightview_extreme_dark_lux>
+  </dxo_nightview_4>
+
+  <dxo_se_default_param>
+	  <dxo_nightview_mlight>80.0</dxo_nightview_mlight>
+        <dxo_nightview_iso>1000.0</dxo_nightview_iso>
+        <dxo_nightview_expo_time>20.0</dxo_nightview_expo_time>
+        <dxo_nightview_bright_thresh>240</dxo_nightview_bright_thresh>
+        <dxo_nightview_dark_thresh>50</dxo_nightview_dark_thresh>
+        <dxo_middle_low>80</dxo_middle_low>
+        <dxo_middle_high>200</dxo_middle_high>
         <dxo_nightview_lux_index_margin>20</dxo_nightview_lux_index_margin>
         <dxo_nightview_light_margin>2</dxo_nightview_light_margin>
         <dxo_nightview_dark_margin>0.04</dxo_nightview_dark_margin>
         <dxo_nightview_middle_margin>0.05</dxo_nightview_middle_margin>
         <dxo_nightview_bright_margin>0</dxo_nightview_bright_margin>
         <dxo_nightview_similar_threshold>0.85</dxo_nightview_similar_threshold>
-
-  </dxo_nightview>
+  </dxo_se_default_param>
 
   <hdr_face>
         <hdr_bright_thresh>240</hdr_bright_thresh>
@@ -155,12 +220,35 @@
         <face_brightness_thresh>200</face_brightness_thresh>
         <hdr_light_thresh>10</hdr_light_thresh>
   </hdr_face>
-  
+
+  <image_motion>
+        <velocity_thresh>0.1</velocity_thresh>
+        <percentage_thresh>0.2</percentage_thresh>
+        <velocity_slow_thresh>24.0</velocity_slow_thresh>
+        <velocity_middle_thresh>80.0</velocity_middle_thresh>
+        <velocity_fast_thresh>180.0</velocity_fast_thresh>
+        <velocity_downsample_factor>8</velocity_downsample_factor>
+        <velocity_max_ratio>0.021</velocity_max_ratio>
+        <velocity_weight_block_inside>0.25</velocity_weight_block_inside>
+        <velocity_weight_block_middle>0.125</velocity_weight_block_middle>
+        <velocity_gaus_kernel_sigma>0.4</velocity_gaus_kernel_sigma>        
+  </image_motion>
+
   <tripod_pattern>
         <tripod_enter_threshold>0.016</tripod_enter_threshold>
-        <tripod_quit_threshold>0.6</tripod_quit_threshold> 
+        <tripod_quit_threshold>0.48</tripod_quit_threshold> 
         <tripod_wait_frames>27</tripod_wait_frames>
         <tripod_enter_frames>14</tripod_enter_frames>
   </tripod_pattern>
 
+  <ell_mode>
+        <ell_lux_index_thres>500</ell_lux_index_thres>
+        <ell_light_thres>10</ell_light_thres>
+        <ell_bright_ratio_thres>0.01</ell_bright_ratio_thres>
+        <ell_middle_ratio_thres>0.4</ell_middle_ratio_thres>
+        <ell_lux_index_margin>20</ell_lux_index_margin>
+        <ell_light_margin>2</ell_light_margin>
+        <ell_similar_hist_thres>0.85</ell_similar_hist_thres>
+        <ell_bright_thres>240</ell_bright_thres>
+  </ell_mode>
 </sceneDetection>

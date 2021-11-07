@@ -1,10 +1,10 @@
 {
   "config": {
     "hw_platform": [
-      "MTP", "Dragon", "Surf", "VENUS"
+      "MTP", "Dragon", "Surf", "IDP"
     ],
     "soc_id": [
-      "291", "246", "305", "321", "339", "415"
+      "291", "246", "305", "321", "339", "450"
     ]
   },
   "sar_algo_1": {
@@ -12,19 +12,19 @@
     ".params":{
       "owner": "sar_algo_1",
         "threshold1": {
-          "ver": "0", "type": "flt", "data": "50"
+          "ver": "3", "type": "flt", "data": "50"
         },
         "threshold2": {
-          "ver": "0", "type": "flt", "data": "600"
+          "ver": "3", "type": "flt", "data": "900"
         },
         "threshold3": {
-          "ver": "0", "type": "flt", "data": "600"
+          "ver": "3", "type": "flt", "data": "900"
         },
         "threshold4": {
-          "ver": "0", "type": "flt", "data": "600"
+          "ver": "3", "type": "flt", "data": "900"
         },
         "threshold5": {
-          "ver": "0", "type": "flt", "data": "600"
+          "ver": "3", "type": "flt", "data": "900"
         },
         "use_acc_gyro": {
           "ver": "0", "type": "flt", "data": "0"

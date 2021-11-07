@@ -97,3 +97,6 @@ epoll_pwait: 1
 epoll_ctl: 1
 epoll_pwait: 1
 getsockopt: 1
+sendmsg: 1
+send: 1
+recv: 1

@@ -1,7 +1,7 @@
 {
   "config":{
-    "hw_platform": ["MTP","VENUS","Dragon","Surf", "HDK"],
-    "soc_id": ["339", "356", "361", "415"]
+    "hw_platform": ["MTP","RENOIR","Dragon","Surf", "HDK"],
+    "soc_id": ["339", "356", "361", "450"]
   },
   "dae":{
     "owner": "sns_dae",

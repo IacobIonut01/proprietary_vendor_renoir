@@ -95,8 +95,10 @@
             // maximum and minimum QPs for Encoders
             // default: 10 - 40
             // allowed override value: 0 - 51
-            "enc_qp_min": 10,
-            "enc_qp_max": 40,
+            "enc_bitrate_boost_qp_min": 10,
+            "enc_bitrate_boost_qp_max": 40,
+            // additional buffers to be added while computing pipeline delays
+            "pipeline_extra_output_buffers": 2,
             // time threshold of output buffer allocation loop since last input buffer queued(ms)
             // 0 --> no such limitation (loop until allocation done)
             "max_retry_alloc_output_timeout": 10000,
@@ -116,7 +118,7 @@
             // encoder Hier-P maximum layer count: 6
             "enc_hier_p_max_temporal_layer_count": 6,
             // encoder Hier-B maximum layer count: 4
-            "enc_hier_b_max_temporal_layer_count": 0
+            "enc_hier_b_max_temporal_layer_count": 4
         },
         // list of codec plugin libraries to be loaded into codec registry
         "QC2CodecPlugins": [

@@ -4,7 +4,8 @@
     "Node": [
       {
           "NodeName": "com.xiaomi.plugin.depurple",
-          "NodeInstance": "DepurpleInstance0"
+          "NodeInstance": "DepurpleInstance0",
+          "NodePropertyId" : 1
       }
     ]
   },

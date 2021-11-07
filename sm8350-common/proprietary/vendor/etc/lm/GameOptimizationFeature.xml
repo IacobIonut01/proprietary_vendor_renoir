@@ -43,8 +43,9 @@
         <Enable>1</Enable>
         <ATML1>1</ATML1>
         <ATML2>1</ATML2>
-        <ATML3>1</ATML3>
+        <ATML3>0</ATML3>
         <GFAR>1</GFAR>
+        <PICARD>0</PICARD>
         <IDLE_SENSE>0</IDLE_SENSE>
         <GROUP_UPMIGRATE_PATH>/proc/sys/kernel/sched_group_upmigrate</GROUP_UPMIGRATE_PATH>
         <GROUP_DOWNMIGRATE_PATH>/proc/sys/kernel/sched_group_downmigrate</GROUP_DOWNMIGRATE_PATH>
@@ -93,10 +94,10 @@
             </DEFAULT_PROF>
         </Profile>
         <Profile target="lahaina">
-            <!-- Colocation v3 1 GHz, Core-CTL  3 -->
-            <DEFAULT>0x40c6c000,1000000,0x41000000,3</DEFAULT>
-            <!-- Colocation v3 1 GHz, Core-CTL  3 -->
-            <SKEW2>0x40c6c000,1000000,0x41000000,3</SKEW2>
+            <!-- Colocation v3 1 GHz -->
+            <DEFAULT>0x40c6c000,1000000</DEFAULT>
+            <!-- Colocation v3 1 GHz -->
+            <SKEW2>0x40c6c000,1000000</SKEW2>
         </Profile>
         <Profile target="shima">
             <!-- Colocation v3 1 GHz, Predictive Load 1, Sched Many Wake Up Threshold 4 ,LPM IPI Prediction 0 -->
@@ -383,7 +384,7 @@
             <Samples>100</Samples>
         </Meter>
     </Meters>
-    <IgnoredApps>
+    <IgnoredApps target="lahaina">
         <App>com.google.android.gms</App>
         <App>com.android.vending</App>
         <App>com.google.android.projection.gearhead</App>
@@ -391,6 +392,11 @@
         <App>com.kiloo.subwaysurf</App>
         <App>com.imangi.templerun2</App>
         <App>com.ogien.trainsim</App>
+    </IgnoredApps>
+    <IgnoredApps target="shima">
+        <App>com.google.android.gms</App>
+        <App>com.android.vending</App>
+        <App>com.google.android.projection.gearhead</App>
     </IgnoredApps>
     <Triggers>
         <Trigger>

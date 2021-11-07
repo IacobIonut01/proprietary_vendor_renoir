@@ -29,10 +29,6 @@
         "NodeInstance": "LDCInstance0"
       },
       {
-        "NodeName": "com.xiaomi.plugin.miaideblur",
-        "NodeInstance": "MiAIDeblurInstance0"
-      },
-      {
         "//": "com.xiaomi.plugin.miaiie",
         "NodeName": "com.xiaomi.plugin.miaiie",
         "NodeInstance": "MiAIIE"
@@ -117,16 +113,6 @@
         "SrcPort": {
           "PortId": 0,
           "NodeInstance": "LDCInstance0"
-        },
-        "DstPort": {
-          "PortId": 0,
-          "NodeInstance": "MiAIDeblurInstance0"
-        }
-      },
-      {
-        "SrcPort": {
-          "PortId": 0,
-          "NodeInstance": "MiAIDeblurInstance0"
         },
         "DstPort": {
           "PortId": 0,
